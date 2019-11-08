@@ -20,9 +20,11 @@ PizzaOrder.prototype.priceTotal = function() {
   return this.price
 }
 
-//User Logic
-var pizzaOrder = new PizzaOrder();
+PizzaOrder.prototype.order = function() {
+  return this.size + " " + this.toppings + " " + this.price;
+}
 
+//User Logic
 $(document).ready(function() {
   $("form#pizza-form").submit(function(event) {
     event.preventDefault();
@@ -33,7 +35,7 @@ $(document).ready(function() {
     }).get();
     var pizzaOrder = new PizzaOrder(size, toppings);
     pizzaOrder.priceTotal();
-    console.log(pizzaOrder.priceTotal());
-
+    $("#order-response").append(pizzaOrder.order());
+    console.log(pizzaOrder.order());
   });
 });
