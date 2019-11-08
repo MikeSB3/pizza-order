@@ -10,7 +10,8 @@ This webpage allows you to order your own custom pizza by selecting one of three
 ## Specifications
 | Behavior |	Input |	Output |
 |---|---|---|
-| This program allows the user to choose a pizza size and any number of toppings | "Small" "Pepperoni" | "One small pepperoni pizza" |
+| This program allows the user to choose a pizza size | "Small" | "One small pizza" |
+| This program allows the user to choose any number of pizza toppings | "Olives" "Pepperoni" | "One olives, pepperoni pizza" |
 | This program calculates the total cost of the pizza based on size chosen and number of toppings chosen | "Medium" "Artichoke, Sausage" | "One medium artichoke, sausage pizza for: $8.99" |
 
 ## Setup
