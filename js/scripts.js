@@ -21,7 +21,7 @@ PizzaOrder.prototype.priceTotal = function() {
 }
 
 PizzaOrder.prototype.order = function() {
-  return this.size + " " + this.toppings + " " + this.price;
+  return "One " + this.size + " pizza with: " + this.toppings + " for: $" + this.price;
 }
 
 //User Logic
@@ -31,11 +31,10 @@ $(document).ready(function() {
     $(".order-details").show();
     var size = $("input[name=pizza-size]:checked").val();
     var toppings = $("input:checkbox[name=pizza-topping]:checked").map(function(){
-      return this.value;
+      return " " + this.value;
     }).get();
     var pizzaOrder = new PizzaOrder(size, toppings);
     pizzaOrder.priceTotal();
     $("#order-response").append(pizzaOrder.order());
-    console.log(pizzaOrder.order());
   });
 });
