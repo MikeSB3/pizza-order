@@ -33,5 +33,5 @@ Or click on the GitHub pages link below to view
 Contact Michael Berryman at berryman.michael@yahoo.com for any questions or issues.
 
 ## Legal
-This software is licensed under the MIT license.
+This software is licensed under the MIT license.  
 Copyright (c) 2019 Michael Berryman All Rights Reserved.

@@ -7,56 +7,55 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Welcome to Mike's Pizza Place!</h1>
-        <h4>Order your pizza below with your favorite toppings and we'll have it ready in 15 minutes, or its free!</h4>
-      </div>
       <div class="row">
-        <div class="col-sm-12">
-          <div class="panel panel-default">
-            <div class="panel panel-heading">
-              <h3 class="panel-title">Order a custom pizza:</h3>
-            </div>
-            <div class="panel-body">
-              <form id="pizza-form">
-                <div class="form-group">
-                  <div class="size col-sm-3">
-                    <label for="pizza-size">Choose your size:</label><br/>
-                    <input type="radio" name="pizza-size" value="small"> Small Pizza<br/>
-                    <input type="radio" name="pizza-size" value="medium"> Medium Pizza<br/>
-                    <input type="radio" name="pizza-size" value="large"> Large Pizza<br/>
-                  </div>
-                  <div class="topping col-sm-3">
-                    <label for="pizza-topping">Choose your toppings:</label><br/>
-                    <input type="checkbox" name="pizza-topping" value="pepperoni"> Pepperoni<br/>
-                    <input type="checkbox" name="pizza-topping" value="olives"> Olives<br/>
-                    <input type="checkbox" name="pizza-topping" value="anchovies"> Anchovies<br/>
-                    <input type="checkbox" name="pizza-topping" value="artichoke"> Artichoke<br/>
-                    <input type="checkbox" name="pizza-topping" value="sausage"> Sausage<br/>
-                    <input type="checkbox" name="pizza-topping" value="onions"> Red Onions<br/>
-                  </div>
+        <div class="jumbotron">
+          <h1>Welcome to Mike's Pizza Place!</h1>
+          <h4>Order your pizza below with your favorite toppings and we'll have it ready in 15 minutes, or its free!</h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel panel-heading">
+            <h3 class="panel-title">Order a custom pizza:</h3>
+          </div>
+          <div class="panel-body">
+            <form id="pizza-form">
+              <div class="form-group">
+                <div class="size col-sm-3">
+                  <label for="pizza-size">Choose your size:</label><br/>
+                  <input type="radio" name="pizza-size" value="small"> Small Pizza<br/>
+                  <input type="radio" name="pizza-size" value="medium"> Medium Pizza<br/>
+                  <input type="radio" name="pizza-size" value="large"> Large Pizza<br/>
                 </div>
-                <div class="submit col-sm-3">
-                  <button type="submit" name="button">Submit Order</button>
+                <div class="topping col-sm-3">
+                  <label for="pizza-topping">Choose your toppings:</label><br/>
+                  <input type="checkbox" name="pizza-topping" value="pepperoni"> Pepperoni<br/>
+                  <input type="checkbox" name="pizza-topping" value="olives"> Olives<br/>
+                  <input type="checkbox" name="pizza-topping" value="anchovies"> Anchovies<br/>
+                  <input type="checkbox" name="pizza-topping" value="artichoke"> Artichoke<br/>
+                  <input type="checkbox" name="pizza-topping" value="sausage"> Sausage<br/>
+                  <input type="checkbox" name="pizza-topping" value="onions"> Red Onions<br/>
                 </div>
-              </form>
-            </div>
+              </div>
+              <div class="submit col-sm-3">
+                <button type="submit" name="button">Submit Order</button>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="row order-details">
-        <div class="col-sm-12">
-          <div class="panel panel-default">
-            <div class="panel panel-heading">
-              <h3 class="panel-title">Your order details:</h3>
-            </div>
-            <div class="panel-body">
-              <span id="order-response">
-                <p>Your Order:</p>
-              </span>
+        <div class="row order-details">
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel panel-heading">
+                <h3 class="panel-title">Your order details:</h3>
+              </div>
+              <div class="panel-body">
+                <span id="order-response">
+                  <p><strong>Your Order:</strong></p>
+                </span>
+              </div>
             </div>
           </div>
         </div>
