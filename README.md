@@ -21,6 +21,7 @@ Enter the file path into the web browser of your choice
 Or click on the GitHub pages link below to view
 
 ## GitHub Pages
+https://mikesb3.github.io/pizza-order/
 
 ## Technologies Used
 * HTML
